@@ -1,0 +1,16 @@
+A01: User u-1042 logged in from Cairo (IP 198.51.100.24) at 09:12 on a known laptop, MFA passed. The same device has been used daily for 8 months.
+A02: User u-2210 had 46 failed logins in 3 minutes from IP 203.0.113.77 (Lagos, new to this user), followed by one successful login. MFA is not enrolled.
+A03: User u-3305 logged in from Cairo at 14:02 and from Frankfurt at 14:20 the same day, both MFA passed. No VPN and no travel record.
+A04: Admin u-0007 logged in at 03:10 from the office network (192.0.2.10) during the scheduled maintenance window. MFA passed. Change ticket CHG-5521 is approved.
+A05: User u-4410 approved an MFA push at 02:47 after receiving 14 push requests in 10 minutes. The login came from 203.0.113.9 (new country).
+A06: Service account svc-backup logged in at 01:00 from the backup server (192.0.2.55), as it does every night. No failures.
+A07: User u-5120 logged in from a new phone in Giza, their usual city. MFA passed. The device was registered yesterday through onboarding ticket HR-3301.
+A08: One IP (203.0.113.140) tried the same password against 9 different accounts in 5 minutes. The login to account u-6032 succeeded.
+A09: User u-7788 was locked out after 3 failed logins from their usual laptop in Cairo, then logged in successfully 40 seconds later.
+A10: User u-8101 logged in from Cairo, then within 5 minutes created a mailbox forwarding rule to an external address and downloaded 2,300 files from the shared drive.
+A11: User u-9004 logged in at 10:05 from the company VPN exit node in Amsterdam (listed in the allowed ranges). MFA passed. Normal working hours.
+A12: User u-1175 logged in at 23:50 from a residential IP in Cairo. Their usual pattern is 08:00 to 17:00 on weekdays. MFA passed. No other anomalies.
+A13: The API token of u-2468 was used from IP 198.51.100.200, a hosting-provider range not seen before, to list all user records at 04:30. The token is 2 years old and was never rotated.
+A14: User u-3999 had 5 failed logins from 192.0.2.77, their home IP, over 2 hours, then succeeded. A password-reset ticket was opened earlier that day.
+A15: User u-4521 logged in from Tor exit node 203.0.113.250. MFA passed. This is their first login ever from outside Egypt.
+A16: Contractor account u-C-119 logged in at 12:30 from the client site (192.0.2.90) as listed in the onboarding record. Access is limited to the ticketing system.
