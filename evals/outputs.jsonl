@@ -1,0 +1,16 @@
+{"id":"A01","label":"benign","reason":"Known laptop used daily for 8 months from Cairo with MFA passed."}
+{"id":"A02","label":"suspicious","reason":"46 failed logins from a new IP in Lagos followed by success without MFA."}
+{"id":"A03","label":"suspicious","reason":"Impossible travel between Cairo and Frankfurt in 18 minutes with no VPN or travel record."}
+{"id":"A04","label":"benign","reason":"Admin login from office IP during scheduled maintenance with MFA and approved change ticket."}
+{"id":"A05","label":"suspicious","reason":"MFA push approved after 14 prompts in 10 minutes from a new country."}
+{"id":"A06","label":"benign","reason":"Routine nightly scheduled login from backup server IP with no failures."}
+{"id":"A07","label":"benign","reason":"New phone in usual city with MFA passed and registered via approved onboarding ticket."}
+{"id":"A08","label":"suspicious","reason":"Password spraying from one IP across 9 accounts in 5 minutes with a successful login."}
+{"id":"A09","label":"benign","reason":"Brief lockout after 3 failed logins on usual Cairo laptop followed by quick success."}
+{"id":"A10","label":"suspicious","reason":"External email forwarding rule and bulk download of 2,300 files within 5 minutes."}
+{"id":"A11","label":"benign","reason":"Login during normal working hours from allowed company VPN exit node with MFA passed."}
+{"id":"A12","label":"benign","reason":"Off-hours login from Cairo residential IP with MFA passed and no other anomalies."}
+{"id":"A13","label":"suspicious","reason":"Two-year-old unrotated API token used at 04:30 from new hosting IP to list users."}
+{"id":"A14","label":"benign","reason":"Gradual failures from home IP followed by success alongside an opened password-reset ticket."}
+{"id":"A15","label":"suspicious","reason":"Login via Tor exit node marking first-ever access outside Egypt despite MFA passing."}
+{"id":"A16","label":"benign","reason":"Contractor login from approved client site IP within restricted ticketing-system scope."}

@@ -1,0 +1,24 @@
+id   label       truth       valid  right  words <=40 
+A01  benign      benign      True   True   12    True 
+A02  suspicious  suspicious  True   True   14    True 
+A03  suspicious  suspicious  True   True   15    True 
+A04  benign      benign      True   True   14    True 
+A05  suspicious  suspicious  True   True   13    True 
+A06  benign      benign      True   True   11    True 
+A07  benign      benign      True   True   14    True 
+A08  suspicious  suspicious  True   True   15    True 
+A09  benign      benign      True   True   14    True 
+A10  suspicious  suspicious  True   True   13    True 
+A11  benign      benign      True   True   14    True 
+A12  benign      benign      True   True   13    True 
+A13  suspicious  suspicious  True   True   14    True 
+A14  benign      benign      True   True   13    True 
+A15  suspicious  suspicious  True   True   13    True 
+A16  benign      benign      True   True   11    True 
+
+invalid JSON lines: 0
+allowed label: 16 / 16
+label matches truth: 16 / 16
+reason <= 40 words: 16 / 16
+MISSES (suspicious called benign): 0
+FALSE ALARMS (benign called suspicious): 0
