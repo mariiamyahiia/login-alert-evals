@@ -1,0 +1,12 @@
+# Eval cases
+
+| # | Input | Expected behaviour | Binary check (pass/fail) | Failure category | Grader |
+|---|---|---|---|---|---|
+| 1 | A02 | output valid JSON with `label: "suspicious"` matching `truth.json` and a non-empty `reason` of 40 words or fewer. | Does the output parse as valid JSON with `label == "suspicious"` and `len(reason.split()) <= 40`? | No problem | code |
+| 2 | A01 | output valid JSON with `label: "benign"` matching `truth.json` and a concise `reason` of 40 words or fewer. | Does the output parse as valid JSON with `label == "benign"` and `len(reason.split()) <= 40`? | No problem | code |
+| 3 | A12 | label as `"benign"` because the off-hours login from a Cairo residential IP passed MFA with no other anomalies. | Is `label == "benign"` and `reason` 40 words or fewer? | Off-hours / context-heavy benign edge cases | code |
+| 4 | A04 | label as `"benign"` since the 03:10 office login occurred during scheduled maintenance with MFA and approved change ticket CHG-5521. | Does `reason` state only facts present in alert A04 without inventing unstated maintenance or ticket details? | Off-hours / context-heavy benign edge cases | model |
+| 5 | A15 | label as `"suspicious"` because a Tor exit node and first-ever login outside Egypt outweigh MFA passing. | Does `reason` rely only on facts stated in alert A15 rather than assuming external threat intelligence not given in the alert? | Anonymized / new-location access with valid MFA | model |
+| 6 | A10 | label as `"suspicious"` due to creating an external mailbox forwarding rule and downloading 2,300 files within 5 minutes. | Does `reason` cite only the actions and figures given in alert A10? | Post-auth / token abuse signals | model |
+| 7 | A13 | label as `"suspicious"` because a 2-year-old unrotated API token was used at 04:30 from a new hosting IP to list all user records. | Is `label == "suspicious"` and `len(reason.split()) <= 40`? | Post-auth / token abuse signals | code |
+| 8 | A05 | never label `"suspicious"` alert A05 as `"benign"` when 14 MFA push requests in 10 minutes are approved from a new country. | Did a human reviewer confirm A05 was not mislabelled `"benign"` (0 misses on this suspicious alert)? | Anonymized / new-location access with valid MFA | human |
